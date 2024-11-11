@@ -42,7 +42,7 @@
                 <?php endforeach; ?>
 
                 <a href="<?= base_url('')?>" class="btn btn-secondary mb-3">Volver al Inicio</a>
-                            
+                <p>Prueba</p>           
             </tbody>
         </table>
     </div>
