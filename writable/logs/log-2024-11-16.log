@@ -1,0 +1,36 @@
+CRITICAL - 2024-11-16 15:13:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categorias/index.php"
+[Method: GET, Route: categorias]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categorias/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categorias/index', [], true)
+ 3 APPPATH\Controllers\CategoriaController.php(13): view('categorias/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 15:31:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categorias/index.php"
+[Method: GET, Route: categorias]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categorias/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categorias/index', [], true)
+ 3 APPPATH\Controllers\CategoriaController.php(13): view('categorias/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 15:34:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categorias/index.php"
+[Method: GET, Route: categorias]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categorias/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categorias/index', [], true)
+ 3 APPPATH\Controllers\CategoriaController.php(13): view('categorias/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

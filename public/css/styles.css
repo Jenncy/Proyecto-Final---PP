@@ -1,0 +1,141 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.top {
+    background-color: #38383A;
+}
+
+.nav-link {
+    
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #E5233A !important;
+}
+
+.barra {
+    padding-top: 7px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.categorias {
+    background-color: aqua;
+}
+
+.content-logo {
+    background-color: chocolate;
+}
+
+.fa-shopping-cart {
+    font-size: 25px;
+    color: white; 
+}
+
+.btn-categorias {
+    color: white;
+}
+
+.btn-categorias:hover {
+    color: #38383A;
+}
+
+
+.carrito:hover {
+    color: #E5233A;
+}
+
+
+.marca {
+    transition: transform .2s;
+}
+
+.marca:hover {
+    transform: scale(1.025);
+    opacity: 0.9;
+}
+
+.h2-marcas {
+    font-weight: bold;
+}
+
+.bg-footer {
+    background-color: #38383A;
+}
+
+/*
+Inicio de dropdown
+
+.dropbtn_ {
+  background-color: #E5233A;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown_ {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content_ {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content_ a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content_ a:hover {background-color: #f1f1f1}
+
+.dropdown_:hover .dropdown-content_ {
+  display: block;
+}
+
+.dropdown_:hover .dropbtn_ {
+  background-color: #E5233A;
+}
+
+fin de dropdown*/
+
+@media (max-width: 992px) {
+    .redes {
+        display: none;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+.redes_footer:hover {
+    color: #38383A !important;
+}
+
+@media (max-width: 700px) {
+    .logo {
+        width: 100%;
+    }
+    .slide {
+        display: none;
+    }
+    
+    .navbar-toggler {
+        display: none;
+    }
+
+}
+
