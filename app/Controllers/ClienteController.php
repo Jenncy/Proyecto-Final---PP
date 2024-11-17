@@ -31,6 +31,21 @@ class ClienteController extends Controller
         ]);
         return redirect()->to('/clientes');
     }
+    
+    public function guardarInicio()
+    {
+        $model = new ClienteModel();
+        $model->save([
+            'nombre' => $this->request->getPost('nombre'),
+            'email' => $this->request->getPost('email'),
+            'telefono' => $this->request->getPost('telefono'),
+            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            'id_rol' => 2,
+            'id_departamento' => $this->request->getPost('departamento'),
+            'id_municipio' => 1
+        ]);
+        return redirect()->to('/');
+    }
 
     public function editar($id)
     {

@@ -11,6 +11,7 @@
 
 <body>
 
+
     <div class="container-fluid top">
         <!-- 
             ========================================== 
@@ -24,11 +25,11 @@
                         href="#exampleModal" data-bs-toggle="modal">Iniciar Sesión</a></li>
                 <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Iniciar Sesión</button>-->
                 <li class=" barra text-white">|</li>
-                <li class="nav-item" data-toggle="modal" data-target="#clienteModal"><a class="nav-link color_icon" 
+                <li class="nav-item" data-toggle="modal" data-target="#clienteModal"><a class="nav-link color_icon"
                         href="#clienteModal" data-bs-toggle="modal">Crear cuenta</a></li>
                 <li class=" barra text-white">|</li>
-                 <!--<li class="nav-item"><a class="nav-link color_icon bg-carrito" href="#"><i class="fas fa-shopping-cart carrito"></i></a></li>-->
-                 <li class="nav-item"><a class="nav-link color_icon" href="#">Ver productos</a></li>
+                <!--<li class="nav-item"><a class="nav-link color_icon bg-carrito" href="#"><i class="fas fa-shopping-cart carrito"></i></a></li>-->
+                <li class="nav-item"><a class="nav-link color_icon" href="#">Ver productos</a></li>
             </ul>
         </div>
     </div>
@@ -61,23 +62,34 @@
                     FORMULARIO DE INICIO DE SESIÓN
                     ==========================================
                     -->
-                                <form class="text-center border border-black p-5" action="#!">
+
+                                <?php if (session()->getFlashdata('error')): ?>
+                                <div class="alert alert-danger">
+                                    <?= session()->getFlashdata('error') ?>
+                                </div>
+                                <?php endif; ?>
+
+                                <form class="text-center border border-black p-5"
+                                    action="<?= base_url('login/autenticar')?>" method="post">
 
                                     <!-- Email -->
-                                    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4"
-                                        placeholder="Correo electrónico">
+                                    <input type="email" name="email" id="email" class="form-control mb-4"
+                                        placeholder="Correo electrónico" required>
                                     <!-- Password -->
-                                    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4"
-                                        placeholder="Contraseña">
+                                    <input type="password" name="password" id="password" class="form-control mb-4"
+                                        placeholder="Contraseña" required>
+
+                                    <!-- Default form login -->
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                                    </div>
                                 </form>
-                                <!-- Default form login -->
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Iniciar Sesión</button>
                 </div>
             </div>
         </div>
@@ -86,63 +98,66 @@
 
     <!--Registrar-->
 
-            <!-- Modal -->
-            <div class="modal fade" id="clienteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar nuevo cliente</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal -->
+    <div class="modal fade" id="clienteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar nuevo cliente</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!--Formulario agregar clientes-->
+                    <form action="<?= base_url('clientes/guardarinicio') ?>" method="post">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre"
+                                required>
                         </div>
-                        <div class="modal-body">
-                            <!--Formulario agregar clientes-->
-                            <form action="<?= base_url('guardar_cliente') ?>" method="post">
-                                <div class="mb-3">
-                                    <label for="txt_codigo" class="form-label">Código:</label>
-                                    <input type="text" class="form-control" id="txt_codigo" name="txt_codigo" placeholder="Id Cliente">
-                                </div>
-    
-                                <div class="mb-3">
-                                    <label for="txt_nombre" class="form-label">Nombre:</label>
-                                    <input type="text" class="form-control" id="txt_nombre" name="txt_nombre" placeholder="Nombre">
-                                </div>
-    
-                                <div class="mb-3">
-                                    <label for="txt_apellido" class="form-label">Apellido:</label>
-                                    <input type="text" class="form-control" id="txt_apellido" name="txt_apellido" placeholder="Apellido">
-                                </div>
-    
-                                <div class="mb-3">
-                                    <label for="txt_fecha_nacimiento" class="form-label">Fecha de nacimiento:</label>
-                                    <input type="date" class="form-control" id="txt_fecha_nacimiento" name="txt_fecha_nacimiento" placeholder="Fecha de nacimiento">
-                                </div>
-    
-                                <div class="mb-3">
-                                    <label for="txt_fecha_suscripcion" class="form-label">Fecha de suscripción:</label>
-                                    <input type="date" class="form-control" id="txt_fecha_suscripcion" name="txt_fecha_suscripcion" placeholder="Fecha de suscripción">
-                                </div>
-    
-                                <div class="mb-3">
-                                    <label for="txt_correo" class="form-label">Correo electrónico:</label>
-                                    <input type="email" class="form-control" id="txt_correo" name="txt_correo" placeholder="Correo electrónico">
-                                </div>
-    
-                                <div class="mb-3">
-                                    <label for="txt_tel" class="form-label">Teléfono móvil:</label>
-                                    <input type="tel" class="form-control" id="txt_tel" name="txt_tel" placeholder="Teléfono móvil">
-                                </div>
-    
-                                <div class="mb-3">
-                                    <input type="submit" class="form-control btn btn-primary" id="btn_guardar" name="btn_guardar" value="Guardar">
-                                </div>
-                            </form>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="example@example.com" required>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono móvil:</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="12345678">
                         </div>
-                    </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="Password" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="departamento" class="form-label">Departamento:</label>
+                            <select name="departamento" id="departamento" class="form-control" required>
+                                <option value="" class="form-control">Seleccionar Departamento</option>
+
+                                <?php foreach ($departamentos as $departamento): ?>
+                                <option value="<?= $departamento['id'] ?>"><?= $departamento['nombre'] ?></option>
+                                <?php endforeach; ?>
+
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="submit" class="form-control btn btn-primary" id="btn_guardar"
+                                name="btn_guardar" value="Guardar">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
+        </div>
+    </div>
+
 
     <!-- Separador -->
     <div class="container-fluid py-3"></div>
@@ -150,19 +165,19 @@
     <div class="container p-0 contenedor-logo">
         <div class="row justify-content-between">
 
-        <!-- SEARCH -->
-        <div class="col p-0">
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand"><img class="logo" src="img/logo.png" alt=""></a>
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>
-                </div>
-              </nav>
+            <!-- SEARCH -->
+            <div class="col p-0">
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand"><img class="logo" src="img/logo.png" alt=""></a>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
         </div>
-    </div>
     </div>
 
 
@@ -227,7 +242,8 @@
                     <!-- Content -->
                     <h6 class="text-uppercase font-weight-bold text-white">cOMPU TECH STORE</h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p class="text-white">El objetivo principal de Compu TEch Store es proveer de productos tecnológicos de la más alta calidad y de las mejores marcas, siempre enfocándose y
+                    <p class="text-white">El objetivo principal de Compu TEch Store es proveer de productos tecnológicos
+                        de la más alta calidad y de las mejores marcas, siempre enfocándose y
                         cuidando la economía de sus clientes.</p>
 
                 </div>
@@ -252,8 +268,10 @@
                     <!-- Links -->
                     <h6 class="text-uppercase font-weight-bold text-white">INTEGRANTES DEL GRUPO</h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p class="text-white"><i class="fas fa-envelope mr-3 text-white"></i> Samy Josue Ruiz Monzón - 200714767</p>
-                    <p class="text-white"><i class="fas fa-phone mr-3"></i> Jenccy Giovanni Santos Morales - 202206632</p>
+                    <p class="text-white"><i class="fas fa-envelope mr-3 text-white"></i> Samy Josue Ruiz Monzón -
+                        200714767</p>
+                    <p class="text-white"><i class="fas fa-phone mr-3"></i> Jenccy Giovanni Santos Morales - 202206632
+                    </p>
                     <p class="text-white"><i class="fas fa-print mr-3"></i> José Carlos Gálvez Manzo - 202211540</p>
                     <p class="text-white"><i class="fas fa-print mr-3"></i> Axel Esaú Colindres Crispín - 202202887</p>
 
@@ -267,7 +285,7 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center text-white-50 py-3">© 2024 Copyright 
+        <div class="footer-copyright text-center text-white-50 py-3">© 2024 Copyright
             <p>Proyectos de programación - EFPEM 2024</p>
         </div>
         <!-- Copyright -->
@@ -277,8 +295,8 @@
 
     <!-- SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

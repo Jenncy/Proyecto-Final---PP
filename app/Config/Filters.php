@@ -34,6 +34,8 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
+        'auth'          => \App\Filters\AuthFilter::class, // Aquí se agrega el filtro 'auth'
+    
     ];
 
     /**
@@ -103,5 +105,12 @@ class Filters extends BaseFilters
      *
      * @var array<string, array<string, list<string>>>
      */
-    public array $filters = [];
+    public array $filters = [
+        'auth' => [
+            'before' => [
+                '/admin' => '1', // Solo accesible para administradores
+                '/usuario' => '2', // Solo accesible para usuarios normales
+            ],
+        ],
+    ];
 }

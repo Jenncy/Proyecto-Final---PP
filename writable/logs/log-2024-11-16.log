@@ -34,3 +34,352 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
  7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 21:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 21:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 21:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 21:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 21:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 21:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-16 22:09:43 --> TypeError: trim(): Argument #1 ($string) must be of type string, array given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim([...], '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 22:11:09 --> TypeError: trim(): Argument #1 ($string) must be of type string, array given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim([...], '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 22:20:10 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim(1, '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 22:20:12 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim(1, '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 22:20:13 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim(1, '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 22:20:25 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim(1, '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 22:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-16 22:21:19 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim(1, '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 22:22:05 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim(1, '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 22:22:06 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim(1, '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 22:22:06 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim(1, '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 22:22:07 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim(1, '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 22:23:03 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim(1, '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 22:23:04 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim(1, '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 22:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-16 22:28:53 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "base_url('"
+[Method: POST, Route: base_url%28%27/login/autenticar%27%29]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('base_url(\'/login/autenticar\')')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('base_url(\'/login/autenticar\')')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 22:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 22:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-16 23:21:42 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: usuario]
+in SYSTEMPATH\Filters\Filters.php on line 495.
+ 1 SYSTEMPATH\Filters\Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 23:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-16 23:24:34 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: admin]
+in SYSTEMPATH\Filters\Filters.php on line 495.
+ 1 SYSTEMPATH\Filters\Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 23:31:08 --> TypeError: trim(): Argument #1 ($string) must be of type string, array given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim([...], '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 23:31:10 --> TypeError: trim(): Argument #1 ($string) must be of type string, array given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim([...], '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 23:31:10 --> TypeError: trim(): Argument #1 ($string) must be of type string, array given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim([...], '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 23:31:11 --> TypeError: trim(): Argument #1 ($string) must be of type string, array given
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 857.
+ 1 SYSTEMPATH\Filters\Filters.php(857): trim([...], '/ ')
+ 2 SYSTEMPATH\Filters\Filters.php(820): CodeIgniter\Filters\Filters->checkPseudoRegex('', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(691): CodeIgniter\Filters\Filters->pathApplies('', [...])
+ 4 SYSTEMPATH\Filters\Filters.php(398): CodeIgniter\Filters\Filters->processFilters('')
+ 5 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 23:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-16 23:31:41 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: admin]
+in SYSTEMPATH\Filters\Filters.php on line 495.
+ 1 SYSTEMPATH\Filters\Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 23:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 23:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
