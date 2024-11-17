@@ -22,7 +22,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($productos as $producto): ?>
+                <?php foreach ($clientes as $cliente): ?>
                     <tr>
                         <td><?= $clientes['id'] ?></td>
                         <td><?= $clientes['nombre'] ?></td>
@@ -30,7 +30,7 @@
                         <td><?= $clientes['telefono'] ?></td>
                         <td><?= $clientes['id_rol'] ?></td>
                         <td><?= $clientes['id_departamento'] ?></td>
-                        <td><?= $producto['id_municipio'] ?></td>
+                        <td><?= $clientes['id_municipio'] ?></td>
                         <td>
                             <a href="<?= base_url('clientes/editar/').$clientes['id'] ?>" class="btn btn-warning btn-sm">Editar</a>
                             <a href="<?= base_url('clientes/eliminar/').$clientes['id'] ?>" class="btn btn-danger btn-sm">Eliminar</a>

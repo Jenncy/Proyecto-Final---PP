@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\ProductoModel;
+use App\Models\CategoriaModel;
 
 class Usuario extends BaseController
 {
@@ -11,5 +13,19 @@ class Usuario extends BaseController
             return redirect()->to('/admin'); // Redirige al panel de administrador si no es usuario normal
         }
         return view('usuario/dashboard');
+    }
+
+    public function productos(): string
+    {        
+        $productosmodel = new ProductoModel();
+        $categoriasmodel = new CategoriaModel();
+
+        $data = [
+            'productos' => $productosmodel->findAll(),
+            'categorias' => $categoriasmodel->findAll(),
+        ];
+
+
+        return view('usuario/productos', $data);
     }
 }

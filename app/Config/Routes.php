@@ -6,6 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
+$routes->get('/productosInicio', 'Home::productos');
 
 $routes->get('/productos', 'ProductoController::index');
 $routes->get('/productos/crear', 'ProductoController::crear');
@@ -51,5 +52,8 @@ $routes->get('/admin', 'Admin::dashboard', ['filter' => 'auth:1']); // Rol 1 par
 // Ruta para el panel de usuario
 $routes->get('/usuario', 'Usuario::dashboard', ['filter' => 'auth:2']); // Rol 2 para usuarios normales
 $routes->post('/login/logout', 'Login::logout'); // Ruta para cerrar sesión
+
+
+$routes->get('/usuario/productos', 'Usuario::productos', ['filter' => 'auth:2']); // Rol 2 para usuarios normales
 
 
