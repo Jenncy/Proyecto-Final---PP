@@ -24,10 +24,11 @@ class ClienteController extends Controller
         $model->save([
             'nombre' => $this->request->getPost('nombre'),
             'email' => $this->request->getPost('email'),
-            'telefono' => $this->request->getPost('telefono'),
-            'rol' => $this->request->getPost('rol'),
-            'departamento' => $this->request->getPost('departamento'),
-            'municipio' => $this->request->getPost('municipio')
+            'telefono' => $this->request->getPost('telefono'),            
+            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            'id_rol' => $this->request->getPost('rol'),
+            'id_departamento' => $this->request->getPost('departamento'),
+            'id_municipio' => $this->request->getPost('municipio')
         ]);
         return redirect()->to('/clientes');
     }

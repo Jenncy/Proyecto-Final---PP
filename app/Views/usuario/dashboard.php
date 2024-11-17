@@ -24,7 +24,7 @@
                     <button type="submit" class="nav-link color_icon">Cerrar sesión</button>
                 </form>
                 <li class=" barra text-white">|</li>
-                <li class="nav-item"><a class="nav-link color_icon" href="#">Ver productos</a></li>
+                <li class="nav-item"><a class="nav-link color_icon" href="usuario/productos">Ver productos</a></li>
             </ul>
         </div>
     </div>
@@ -43,7 +43,7 @@
             <div class="col p-0">
                 <nav class="navbar bg-body-tertiary">
                     <div class="container-fluid">
-                        <a class="navbar-brand"><img class="logo" src="<?= base_url('img/logo.png') ?>" alt=""></a>
+                        <a class="navbar-brand" href="<?= base_url('/usuario') ?>"><img class="logo" src="<?= base_url('img/logo.png') ?>" alt=""></a>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -129,10 +129,10 @@
                     <!-- Links -->
                     <h6 class="text-uppercase font-weight-bold text-white">Computadoras</h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; color: #E5233A;">
-                    <p><a class="text-white" href="#">Dell</a></p>
-                    <p><a class="text-white" href="#">HP</a></p>
-                    <p><a class="text-white" href="#">Lenovo</a></p>
-                    <p><a class="text-white" href="#">Toshiba</a></p>
+                    <p><a class="text-white" href="usuario/productos">Dell</a></p>
+                    <p><a class="text-white" href="usuario/productos">HP</a></p>
+                    <p><a class="text-white" href="usuario/productos">Lenovo</a></p>
+                    <p><a class="text-white" href="usuario/productos">Toshiba</a></p>
 
                 </div>
 
